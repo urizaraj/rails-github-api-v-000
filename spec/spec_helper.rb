@@ -7,6 +7,7 @@ require 'capybara/rails'
 require 'capybara/rspec'
 require 'webmock/rspec'
 require 'rack_session_access/capybara'
+require 'json'
 
 RSpec.configure do |config|
   config.include Capybara::DSL
