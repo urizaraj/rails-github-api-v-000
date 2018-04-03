@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/auth' => 'sessions#create'
+  get '/users/auth/github/callback' => 'sessions#create'
   post '/repositories/create' => 'repositories#create'
   root 'repositories#index'
 

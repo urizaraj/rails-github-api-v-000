@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
     client_id = ENV['GITHUB_CLIENT_ID']
     # redirect_uri = CGI.escape("http://localhost:3000/users/auth/github/callback")
     redirect_uri = CGI.escape("http://localhost:3000/auth")
+    redirect_uri = CGI.escape("http://localhost:3000/users/auth/github/callback")
 
     github_url = "https://github.com/login/oauth/authorize?client_id=#{client_id}&redirect_uri=#{redirect_uri}&scope=repo"
 
